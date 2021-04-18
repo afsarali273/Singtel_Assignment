@@ -23,7 +23,7 @@ Run manually by right clicking and Run feature file.*
 ```html
 Below Tests are covered:
 
-Feature :
+Scenarios :
 1.I shall be able to create new Todo lists
 2.I shall be able to mark todo as completed
 3.I shall be able to delete todo list
