@@ -10,7 +10,8 @@
 3. mvn clean install
 4. mvn test 
 
-5. Then you can see Html report at /target/prety-html/
+5. Then you can see Html report at 
+/target/pretty-cucumber/cucumber-html-reports/
 
 ```
 
