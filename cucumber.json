@@ -1,0 +1,904 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T06:15:00.153Z",
+        "line": 7,
+        "name": "I shall be able to create new Todo lists",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-create-new-todo-lists",
+        "after": [
+          {
+            "result": {
+              "duration": 87077000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2175882000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 545417000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16662000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I shall see 3 new Todo list is being added in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.i_shall_see_newly_added_todo_list(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25058000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify numbers of todo as 3 in the bottom text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 26
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyNoOfTodoLists(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T06:15:03.054Z",
+        "line": 16,
+        "name": "I shall be able to mark todo as completed",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-mark-todo-as-completed",
+        "after": [
+          {
+            "result": {
+              "duration": 86426000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1531567000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 267893000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149078000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I mark all todo list as completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "all",
+                  "offset": 7
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.markAllTodoToComplete(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22558000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify numbers of todo as 0 in the bottom text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 26
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyNoOfTodoLists(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112972000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I shall see all todo list with tick and strike out",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyAllTodoListTickedAndStrikeThrough()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43628000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on the active button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "active",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10020035000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I shall see 0 active todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "active",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36702000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the completed button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "completed",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8020000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I shall see 3 completed todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                },
+                {
+                  "val": "completed",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T06:15:15.340Z",
+        "line": 30,
+        "name": "I shall be able to delete todo list",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-delete-todo-list",
+        "after": [
+          {
+            "result": {
+              "duration": 82552000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1339287000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 317933000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144248000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I mark all todo list as completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "all",
+                  "offset": 7
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.markAllTodoToComplete(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36484000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I click on the ClearCompleted button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ClearCompleted",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10057059000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I shall see 0 completed todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "completed",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T06:15:27.321Z",
+        "line": 41,
+        "name": "I shall be able to clear only completed todo list",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-clear-only-completed-todo-list",
+        "after": [
+          {
+            "result": {
+              "duration": 84898000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1243828000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 272026000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108913000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I mark first_two todo list as completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first_two",
+                  "offset": 7
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.markAllTodoToComplete(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33926000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on the ClearCompleted button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ClearCompleted",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6706000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I shall see 1 active todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "active",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T06:15:29.075Z",
+        "line": 51,
+        "name": "I shall be able to undo completed todo list",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-undo-completed-todo-list",
+        "after": [
+          {
+            "result": {
+              "duration": 87498000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1281565000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 262020000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140709000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I mark all todo list as completed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "all",
+                  "offset": 7
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.markAllTodoToComplete(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47089000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on the active button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "active",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10057193000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I shall see 0 active todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 12
+                },
+                {
+                  "val": "active",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40852000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I click on the all button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "all",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194344000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I Undo below todo list from completed",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.undoBelowTodoFromCompleted(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25295000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I click on the active button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "active",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6500000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I shall see 2 active todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                },
+                {
+                  "val": "active",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T06:15:41.224Z",
+        "line": 67,
+        "name": "I shall be able to edit todo list",
+        "description": "",
+        "id": "todo-feature-for-remembering-things;i-shall-be-able-to-edit-todo-list",
+        "after": [
+          {
+            "result": {
+              "duration": 83607000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.AfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1342699000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.i_am_on_the_TodoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 280115000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I insert my todo tasks in the input field and press enter",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.insertTodoListInTextField(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125119000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I Edit below todo list from completed",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.editExistingTodoList(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Task to complete.-\u003e This is my First Edited Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Task to complete.-\u003e This is my Second Edited Task to complete."
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46731000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I click on the all button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "all",
+                  "offset": 15
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.clickActive_All_Clear_Button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25924000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I shall see 3 active todo records",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                },
+                {
+                  "val": "active",
+                  "offset": 14
+                }
+              ],
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyActiveTodoLists(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 145245000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I shall see below todo lists",
+            "match": {
+              "location": "singtel.stepDefinations.TodoListStepDef.verifyTodoLists(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is my First Edited Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Second Edited Task to complete."
+                ]
+              },
+              {
+                "cells": [
+                  "This is my Third Task to complete."
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "TODO Feature for remembering things",
+    "description": "\"\"\"\nIn order to\tremember the things\tI want to do, as an ToDo MVC user,\nI want to manage my todo list\n\"\"\"",
+    "id": "todo-feature-for-remembering-things",
+    "keyword": "Feature",
+    "uri": "classpath:features/todo_example.feature",
+    "tags": []
+  }
+]
