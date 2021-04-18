@@ -46,6 +46,6 @@ Scenario: I shall be able to create new Todo lists
 ```
 
 **Test Results**
-![Test Results](https://github.com/afsarali273/Singtel_Assignment/blob/master/singtel-assignment.png)
+![Test Results](https://github.com/afsarali273/Singtel_Assignment/blob/master/img.png)
 
 
